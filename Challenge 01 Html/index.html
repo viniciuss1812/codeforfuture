@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-container">
+            <p class="title">Cadastro de Funcionário</p>
+            <p class="description">Preencha todos os dados a seguir e em 24 horas iremos responder.</p>
+        </div>
+        <div class="card">
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" name="cargo" required>
+                    <option value="">Selecione...</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="atendimento">Atendimento</option>
+                </select>
+                
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <label for="masculino">
+                        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                        Masculino
+                    </label>
+                    <label for="feminino">
+                        <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                        Feminino
+                    </label>
+                </fieldset>
+                
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+                
+                <label for="sobre-mim">Fale sobre mim:</label>
+                <textarea id="sobre-mim" name="sobre-mim" rows="5" maxlength="200" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
